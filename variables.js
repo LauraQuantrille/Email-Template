@@ -13,8 +13,8 @@ Handlebars.registerHelper('_isEqual', (a, b, c, d) => {
 
 let variablesNotCompiled = {
   metadata: {
-    accountName: 'communityimpactfund',
-    accountUrl: 'communityimpactfund.sandbox.loanwell.com',
+    accountName: 'acme',
+    accountUrl: 'acme.sandbox.loanwell.com',
     accountAddress: '212 West Main Street, Suite 303, Durham, NC 27707',
     accountLogoUrl: '',
     accountMainColor: '#0D1367',
@@ -33,14 +33,14 @@ variablesNotCompiled = _merge({}, variablesNotCompiled, queryParams);
 const template = Handlebars.compile(JSON.stringify(variablesNotCompiled));
 
 let inMemoryData = {
-  environmentUrl: 'https://communityimpactfund.loanwell.com',
+  environmentUrl: 'https://acme.loanwell.com',
   record: {
     payload: {
       newImage: {
         accountStatus: '13',
         id: '123',
-        borrowerFirstName: 'Bernard',
-        borrowerEmail: 'bernard+applicant@loanwell.com',
+        borrowerFirstName: '',
+        borrowerEmail: '',
         f73a9657172a40e0b9861df082713a35: 'Activate Work',
       },
     },
